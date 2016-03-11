@@ -1,0 +1,8 @@
+#!/bin/sh
+# Converts a pfx-file to .crt and .key
+
+
+INFILE="$1"
+
+openssl pkcs12 -in "$INFILE" -out "${INFILE%.*}.crt" -nodes
+openssl pkcs12 -in "$INFILE" -nocerts -nodes -out "${INFILE%.*}.key"

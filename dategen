@@ -1,0 +1,3 @@
+#!/bin/sh
+# Generates a command to set the date and time to the current date and time.
+date +"date --set='%Y-%m-%d %H:%M:%S'"
