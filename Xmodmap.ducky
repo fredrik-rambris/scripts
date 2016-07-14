@@ -1,0 +1,9 @@
+keycode 13 = 4 dollar dollar onequarter dollar onequarter
+keycode 49 = grave asciitilde grave asciitilde section onehalf
+keycode 127 = XF86AudioPlay
+keycode 78 = XF86AudioNext XF86AudioPrev
+
+
+clear Lock
+
+pointer = 1 2 3 4 5 6 7 9 8 10 11 12 13

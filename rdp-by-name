@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Symlink hostname to this scripts
+
+name="$( basename "$0" )"
+
+#rdp -uusername@domain -p'password' -T$name $name $@
+rdp /u:username@domain /p:'password' /t:$name /v:$name $@

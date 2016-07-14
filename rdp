@@ -1,0 +1,5 @@
+#!/bin/sh
+#rm -f ~/.rdesktop/licence.*
+#rdesktop -x l -a24 -g1400x900 -ksv -z -r 'disk:download=/home/boost/Data/Download' -r 'clipboard:PRIMARYCLIPBOARD' $@
+xfreerdp /cert-ignore /bpp:24 /network:wan /kbd:sv /size:1400x900 +compression +clipboard /drive:Data,/home/boost/Data $@
+#/network:lan 

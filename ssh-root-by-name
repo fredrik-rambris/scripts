@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Symlink hostname of destination server to this
+
+
+name="$(basename "$0" )"
+
+if ! [ -z "$http_proxy" ] ; then
+	ssh -A -t -R3128:127.0.0.1:3128 "root@$name" "export http_proxy=$http_proxy ; \$SHELL"
+else
+	ssh -A -t -R3128:127.0.0.1:3128 "root@$name"
+fi
+exit $!
